@@ -1053,7 +1053,7 @@ button.swiper-pagination-bullet {
   font-family: "PP Neue Montreal";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/NeueMontreal-Medium.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/ppneuemontreal-medium.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* pp neue montreal bold */
 @font-face {
@@ -1061,7 +1061,7 @@ button.swiper-pagination-bullet {
   font-family: "PP Neue Montreal";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/NeueMontreal-Bold.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/ppneuemontreal-bold.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 *,
 *::before,
@@ -1299,9 +1299,34 @@ main {
     font-size: 3.8rem;
   }
 }
+.section--contacts {
+  margin-bottom: 112px;
+}
+@media (max-width: 768px) {
+  .section--contacts {
+    margin-bottom: 64px;
+  }
+}
+.section--contacts .section__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section--contacts .section__title {
+  margin-bottom: 38px;
+  font-size: 4.8rem;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .section--contacts .section__title {
+    font-size: 3.8rem;
+    margin-bottom: 48px;
+  }
+}
 .section__title {
   font-size: 7rem;
   font-weight: 700;
+  text-transform: uppercase;
   line-height: 1.2;
 }
 .section__subtitle {
@@ -1395,4 +1420,28 @@ main {
   display: flex;
   align-items: flex-start;
   gap: 6px;
+}
+
+.socials {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 183px));
+  gap: 20px;
+}
+.socials__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #393939;
+}
+.socials__item-caption {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+.socials__item-icon {
+  max-width: 51px;
+  max-height: 51px;
 }
