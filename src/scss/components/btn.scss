@@ -23,6 +23,12 @@
 
         transition: 0.3s linear;
 
+        @media (max-width: $sm) {
+            font-size: 1.5rem;
+
+            max-width: 100%;
+        }
+
         &:hover {
             background-color: darken($highlight, 10%);
         }

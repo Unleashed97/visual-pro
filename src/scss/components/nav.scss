@@ -1,9 +1,5 @@
 .nav {
     &--header {
-        @media (max-width: $md) {
-            display: none;
-        }
-
         .nav__list {
             display: flex;
             align-items: center;
@@ -16,6 +12,16 @@
         .nav__link {
             font-weight: 700;
             line-height: 1.2;
+
+            transition: 0.3s linear;
+
+            @media (max-width: $sm) {
+                font-size: 1.5rem;
+            }
+
+            &:hover {
+                color: $highlight;
+            }
         }
     }
 }

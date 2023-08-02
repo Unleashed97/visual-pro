@@ -1,15 +1,29 @@
 .section {
     &--showcase {
+        margin-bottom: 120px;
+
+        @media (max-width: $md) {
+            margin-bottom: 80px;
+        }
         .section__inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            display: grid;
+            grid-template-columns: 40% 60%;
+
+            @media (max-width: $sm) {
+                grid-template-columns: 1fr;
+            }
         }
         .section__subtitle {
             margin-bottom: 14px;
 
             font-size: 2rem;
             font-weight: 500;
+
+            @media (max-width: $sm) {
+                margin-bottom: 16px;
+
+                font-size: 1.8rem;
+            }
         }
 
         .section__title {
@@ -18,22 +32,48 @@
             font-size: 12rem;
             font-weight: 700;
             line-height: 0.9;
+
+            @media (max-width: $lg) {
+                font-size: 8rem;
+            }
+            @media (max-width: $sm) {
+                margin-bottom: 28px;
+
+                font-size: 9rem;
+            }
         }
 
         .section__text {
             margin-bottom: 42px;
 
             max-width: 349px;
+
+            @media (max-width: $sm) {
+                margin-bottom: 38px;
+
+                font-size: 1.5rem;
+            }
         }
 
         .btn {
             margin-bottom: 47px;
+
+            @media (max-width: $sm) {
+                margin-bottom: 38px;
+            }
         }
 
         .section__about-course {
             display: grid;
-            grid-template-columns: repeat(2, 183px);
+            grid-template-columns: repeat(2, minmax(155px, 183px));
             gap: 20px;
+
+            @media (max-width: $lg) {
+                grid-template-columns: 1fr;
+            }
+            @media (max-width: $md) {
+                grid-template-columns: repeat(2, minmax(130px, 183px));
+            }
         }
         .section__about-course-item {
             display: flex;
@@ -46,16 +86,47 @@
             font-weight: 500;
 
             border-bottom: 1px solid #393939;
+
+            @media (max-width: $sm) {
+                font-size: 1.8rem;
+            }
         }
 
         .section__about-course-caption {
             font-size: 1.6rem;
             font-weight: 400;
+
+            @media (max-width: $sm) {
+                font-size: 1.5rem;
+            }
+        }
+
+        .section__image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+
+            @media (max-width: $sm) {
+                display: none;
+            }
         }
     }
     &__inner {
     }
     &__title {
+    }
+
+    &__subtitle {
+        margin-bottom: 6px;
+
+        font-size: 2rem;
+        font-weight: 500;
+
+        @media (max-width: $sm) {
+            margin-bottom: 8px;
+
+            font-size: 1.8rem;
+        }
     }
 
     &__content {
