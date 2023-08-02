@@ -115,6 +115,28 @@
             }
         }
     }
+    &--portfolio {
+        margin-bottom: 132px;
+
+        @media (max-width: $md) {
+            margin-bottom: 108px;
+        }
+
+        .section__title {
+            margin-bottom: 67px;
+            text-align: center;
+
+            @media (max-width: $sm) {
+                margin-bottom: 38px;
+            }
+        }
+
+        .section__inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
     &--about {
         margin-bottom: 100px;
 
@@ -166,6 +188,10 @@
         font-weight: 700;
         text-transform: uppercase;
         line-height: 1.2;
+
+        @media (max-width: $sm) {
+            font-size: 3.8rem;
+        }
     }
 
     &__subtitle {

@@ -1,0 +1,122 @@
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 323px);
+    gap: 84px;
+
+    @media (max-width: $xl) {
+        grid-template-columns: repeat(2, 323px);
+    }
+
+    @media (max-width: $md) {
+        grid-template-columns: 323px;
+        gap: 76px;
+    }
+
+    &__item {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        padding-top: 25px;
+
+        max-width: 323px;
+
+        // @media (max-width: $xl) {
+        //     &:nth-child(3) {
+        //         grid-column: 1/3;
+        //     }
+        // }
+
+        &::after {
+            content: '';
+
+            position: absolute;
+            right: -42px;
+            top: 0;
+
+            width: 1px;
+            height: 100%;
+
+            background-color: $text-color;
+        }
+
+        &:last-child::after {
+            display: none;
+        }
+
+        @media (max-width: $xl) {
+            &:nth-child(2)::after {
+                display: none;
+            }
+        }
+        @media (max-width: $md) {
+            &::after,
+            &:nth-child(2)::after,
+            &:last-child::after {
+                display: block;
+                top: auto;
+                right: auto;
+                bottom: -38px;
+                width: 100%;
+                height: 1px;
+            }
+        }
+    }
+
+    &__item-title {
+        position: relative;
+
+        flex-grow: 1;
+
+        margin-bottom: 48px;
+
+        font-size: 2.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        // padding:
+    }
+
+    &__item-bg-title {
+        position: absolute;
+        top: -22px;
+        left: -7px;
+        right: -6px;
+        z-index: -1;
+
+        font-size: 4.1rem;
+        font-weight: 700;
+        line-height: 1.2;
+        text-transform: uppercase;
+        // white-space: nowrap;
+        letter-spacing: 0.01em;
+
+        color: #393939;
+    }
+
+    &__item-content {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    &__row {
+        position: relative;
+
+        display: flex;
+        gap: 55px;
+        min-height: 198px;
+
+        picture:nth-child(2) {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+
+    &__item-image {
+        display: flex;
+        border-radius: 10px;
+    }
+}
