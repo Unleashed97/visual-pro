@@ -111,9 +111,33 @@
             }
         }
     }
+    &--about {
+        margin-bottom: 100px;
+
+        @media (max-width: $md) {
+            margin-bottom: 80px;
+        }
+
+        .section__title {
+            margin-bottom: 38px;
+
+            @media (max-width: $sm) {
+                margin-bottom: 28px;
+
+                font-size: 3.8rem;
+            }
+        }
+    }
+
+    &--contacts {
+    }
+
     &__inner {
     }
     &__title {
+        font-size: 7rem;
+        font-weight: 700;
+        line-height: 1.2;
     }
 
     &__subtitle {

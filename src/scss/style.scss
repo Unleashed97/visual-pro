@@ -27,6 +27,10 @@ body {
     line-height: 1.4;
 
     background-color: $primary;
+
+    @media (max-width: $sm) {
+        font-size: 1.5rem;
+    }
 }
 
 ul {
@@ -73,3 +77,4 @@ main {
 @import 'components/nav.scss';
 @import 'components/section.scss';
 @import 'components/btn.scss';
+@import 'components/exp.scss';

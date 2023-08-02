@@ -1045,7 +1045,7 @@ button.swiper-pagination-bullet {
   font-family: "PP Neue Montreal";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/NeueMontreal-Regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/ppneuemontreal-book.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* pp neue montreal medium */
 @font-face {
@@ -1055,7 +1055,7 @@ button.swiper-pagination-bullet {
   font-weight: 500;
   src: url("../fonts/NeueMontreal-Medium.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* pp neue montreal regular */
+/* pp neue montreal bold */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "PP Neue Montreal";
@@ -1079,6 +1079,11 @@ body {
   color: #f3f0ed;
   line-height: 1.4;
   background-color: #161616;
+}
+@media (max-width: 576px) {
+  body {
+    font-size: 1.5rem;
+  }
 }
 
 ul {
@@ -1142,7 +1147,7 @@ main {
 }
 .container {
   width: 100%;
-  max-width: 1240px;
+  max-width: 1248px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -1277,6 +1282,28 @@ main {
     display: none;
   }
 }
+.section--about {
+  margin-bottom: 100px;
+}
+@media (max-width: 768px) {
+  .section--about {
+    margin-bottom: 80px;
+  }
+}
+.section--about .section__title {
+  margin-bottom: 38px;
+}
+@media (max-width: 576px) {
+  .section--about .section__title {
+    margin-bottom: 28px;
+    font-size: 3.8rem;
+  }
+}
+.section__title {
+  font-size: 7rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
 .section__subtitle {
   margin-bottom: 6px;
   font-size: 2rem;
@@ -1316,4 +1343,56 @@ main {
 }
 .btn--pink:hover {
   background-color: #d61362;
+}
+
+.exp__title {
+  margin-bottom: 14px;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+@media (max-width: 576px) {
+  .exp__title {
+    margin-bottom: 17px;
+    font-size: 2rem;
+    line-height: 1.35;
+  }
+}
+.exp__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .exp__content {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+.exp__summary, .exp__list {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #393939;
+}
+@media (max-width: 768px) {
+  .exp__summary, .exp__list {
+    padding-bottom: 18px;
+  }
+}
+.exp__summary {
+  max-width: 590px;
+  font-size: 1.8rem;
+}
+@media (max-width: 576px) {
+  .exp__summary {
+    font-size: 1.5rem;
+  }
+}
+.exp__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.exp__list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
 }
