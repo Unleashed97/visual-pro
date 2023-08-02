@@ -1216,6 +1216,11 @@ main {
     font-size: 9rem;
   }
 }
+@media (max-width: 360px) {
+  .section--showcase .section__title {
+    font-size: 7rem;
+  }
+}
 .section--showcase .section__text {
   margin-bottom: 42px;
   max-width: 349px;
