@@ -1,0 +1,11 @@
+.header {
+    grid-area: header;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        padding: 44px 0;
+    }
+}

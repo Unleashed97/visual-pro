@@ -1,0 +1,63 @@
+.section {
+    &--showcase {
+        .section__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .section__subtitle {
+            margin-bottom: 14px;
+
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        .section__title {
+            margin-bottom: 30px;
+
+            font-size: 12rem;
+            font-weight: 700;
+            line-height: 0.9;
+        }
+
+        .section__text {
+            margin-bottom: 42px;
+
+            max-width: 349px;
+        }
+
+        .btn {
+            margin-bottom: 47px;
+        }
+
+        .section__about-course {
+            display: grid;
+            grid-template-columns: repeat(2, 183px);
+            gap: 20px;
+        }
+        .section__about-course-item {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+
+            padding-bottom: 14px;
+
+            font-size: 2rem;
+            font-weight: 500;
+
+            border-bottom: 1px solid #393939;
+        }
+
+        .section__about-course-caption {
+            font-size: 1.6rem;
+            font-weight: 400;
+        }
+    }
+    &__inner {
+    }
+    &__title {
+    }
+
+    &__content {
+    }
+}

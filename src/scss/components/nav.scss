@@ -1,0 +1,21 @@
+.nav {
+    &--header {
+        @media (max-width: $md) {
+            display: none;
+        }
+
+        .nav__list {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav__item {
+        }
+
+        .nav__link {
+            font-weight: 700;
+            line-height: 1.2;
+        }
+    }
+}

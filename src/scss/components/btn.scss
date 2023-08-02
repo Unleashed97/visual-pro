@@ -1,0 +1,30 @@
+.btn {
+    margin: 0;
+
+    font-family: $family;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: $text-color;
+
+    background: none;
+    border: 0;
+    cursor: pointer;
+
+    &--pink {
+        max-width: 285px;
+        width: 100%;
+
+        padding: 16px 20px;
+
+        background-color: $highlight;
+        border-radius: 4px;
+        box-shadow: 0 0 12px $highlight;
+
+        transition: 0.3s linear;
+
+        &:hover {
+            background-color: darken($highlight, 10%);
+        }
+    }
+}

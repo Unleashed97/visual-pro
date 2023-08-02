@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- head include -->
+@@include('html/partials/head.html', {
+"title": "Главная"
+})
+
+<body>
+    <div class="wrapper">
+
+        <!-- header include -->
+        @@include('html/partials/header.html')
+
+        <!-- main -->
+        <main>
+            <!-- section showcase-->
+            <section class="section section--showcase">
+                <div class="container">
+                    <div class="section__inner">
+                        <div class="section__text-block">
+                            <p class="section__subtitle">– ты можешь видеть мир иначе</p>
+                            <h2 class="section__title">VISUAL <br> PRO</h2>
+                            <p class="section__text">
+                                Курс про визуал, развитие, личность и стиль. Для тех, кто начинает вести блог и хочет
+                                делать это качественно
+                            </p>
+                            <button type="button" class="btn btn--pink">Записаться на курс</button>
+
+                            <div class="section__about-course">
+                                <div class="section__about-course-item">
+                                    <span class="section__about-course-caption">Продолжительность:</span>
+                                    <span>5 недель</span>
+                                </div>
+                                <div class="section__about-course-item">
+                                    <span class="section__about-course-caption">Старт:</span>
+                                    <span>13 июня</span>
+                                </div>
+                            </div>
+                        </div>
+                        <picture>
+                            <source srcset="img/section/showcase/showcase-image.webp">
+                            <img src="img/section/showcase/showcase-image.png" alt="ЮЛЯ АСИЛЕЦ">
+                        </picture>
+                    </div>
+                </div>
+            </section> <!-- end of section showcase -->
+
+
+        </main>
+        <!-- footer include -->
+        @@include('html/partials/footer.html')
+    </div>
+
+</body>
+
+</html>
