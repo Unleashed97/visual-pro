@@ -1,11 +1,23 @@
 .header {
     grid-area: header;
 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+    background-color: $primary;
+
     &__inner {
         display: flex;
         align-items: center;
         justify-content: flex-end;
 
         padding: 44px 0;
+
+        @media (max-width: $md) {
+            padding: 28px 0;
+        }
     }
 }

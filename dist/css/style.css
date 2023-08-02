@@ -1121,12 +1121,23 @@ main {
 
 .header {
   grid-area: header;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: #161616;
 }
 .header__inner {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding: 44px 0;
+}
+@media (max-width: 768px) {
+  .header__inner {
+    padding: 28px 0;
+  }
 }
 
 .footer {
@@ -1172,11 +1183,13 @@ main {
 }
 
 .section--showcase {
+  padding-top: 106px;
   margin-bottom: 120px;
 }
 @media (max-width: 768px) {
   .section--showcase {
     margin-bottom: 80px;
+    padding-top: 94px;
   }
 }
 .section--showcase .section__inner {

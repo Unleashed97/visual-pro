@@ -1,10 +1,14 @@
 .section {
     &--showcase {
+        padding-top: 106px;
+
         margin-bottom: 120px;
 
         @media (max-width: $md) {
             margin-bottom: 80px;
+            padding-top: 94px;
         }
+
         .section__inner {
             display: grid;
             grid-template-columns: 40% 60%;
